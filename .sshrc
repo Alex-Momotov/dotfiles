@@ -1,0 +1,24 @@
+#############################################################################################
+# Command line prompt
+orange=$(tput setaf 166);
+white=$(tput setaf 15);
+violet=$(tput setaf 92);
+red=$(tput setaf 1);
+bold=$(tput bold);
+reset=$(tput sgr0);
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/*//'
+}
+if [ "$SSH_CONNECTION" ]; then 
+    PS1="\[${bold}${violet}\]\h:";
+else
+    PS1=""
+fi
+PS1+="\[${bold}${orange}\]\w";
+PS1+="\$(parse_git_branch \"\[${white}\]\[${orange}\]\"\"\[${blue}\]\") ";  # git branch name
+PS1+="\[${reset}${bold}\]************************\n";
+PS1+="\[${reset}${bold}\]\$ \[${reset}\]";clear;
+export PS1;
+
+#############################################################################################
