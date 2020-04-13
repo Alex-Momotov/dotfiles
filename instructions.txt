@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------------
+    IntelliJ Idea
+"File" -> "Export settings" -> save settings.zip in this repo
+"File" -> "Import settings" -> import the saved file
+
+-------------------------------------------------------------------------------------

@@ -1,4 +1,8 @@
 #############################################################################################
+# Company specific vars
+source ~/.bash_vars_company
+
+#############################################################################################
 # Command line prompt
 source ~/.sshrc
 
@@ -28,6 +32,9 @@ alias gc='git checkout'
 alias gt='git stash'
 alias gm='git commit'
 
+# forklift
+alias ft='open . -a forklift'
+
 #############################################################################################
 # Env variables
 
@@ -41,7 +48,8 @@ export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 #############################################################################################
-# Misc
-source /usr/local/share/chruby/chruby.sh
-chruby ruby-2.6.4
-export OAS_PATH=/Users/omomotov/Documents/work_projects/nexmo-developer/_open_api/api_specs/
+
+
+
+
+
