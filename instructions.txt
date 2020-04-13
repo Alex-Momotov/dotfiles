@@ -4,3 +4,18 @@
 "File" -> "Import settings" -> import the saved file
 
 -------------------------------------------------------------------------------------
+    Bash profile
+One of the first lines in .bash_profile is 'source ~/.bash_vars_company'.
+~/.bash_vars_company contains company specific env vars which is sensitive info, so the file never leaves the laptop.
+
+~/.bash_profile is a link to ~/_projects_my/dotfiles/.bash_profile
+
+-------------------------------------------------------------------------------------
+    SSHRC
+Tool that copies content of .sshrc to a remote server when doing ssh.
+
+brew install sshrc
+~/.sshrc is a link to ~/_projects_my/dotfiles/.bash_profile
+
+-------------------------------------------------------------------------------------
+
