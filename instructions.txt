@@ -18,4 +18,26 @@ brew install sshrc
 ~/.sshrc is a link to ~/_projects_my/dotfiles/.bash_profile
 
 -------------------------------------------------------------------------------------
+    VSCode
+Original setting files remain under ~/_projects_my/dotfiles.
+Then create symbolic links from that to where VSCode expects to find settings.
+ln -s /Users/omomotov/_projects_my/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/settings.jsonB
+ln -s /Users/omomotov/_projects_my/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s /Users/omomotov/_projects_my/dotfiles/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets/
+
+To list current extensions run in terminal: code --list-extensions
+jpogran.puppet-vscode
+mohsen1.prettify-json
+ms-azuretools.vscode-docker
+ms-python.python
+nachocab.run-external
+RandomFractalsInc.vscode-data-preview
+sensourceinc.vscode-sql-beautify
+wholroyd.HCL
+
+
+
+
+
+
 

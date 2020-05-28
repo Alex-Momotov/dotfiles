@@ -35,6 +35,12 @@ alias gm='git commit'
 # forklift
 alias ft='open . -a forklift'
 
+# docker
+alias dc='docker container'
+alias di='docker image'
+alias ds='docker stats'
+alias de='docker exec'
+
 #############################################################################################
 # Env variables
 
