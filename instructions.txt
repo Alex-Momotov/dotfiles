@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------------
     IntelliJ Idea
-"File" -> "Export settings" -> save settings.zip in this repo
+"File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
+-------------------------------------------------------------------------------------
+    Pycharm
+"File" -> "Export settings" -> save pycharm_settings.zip in this repo
+"File" -> "Import settings" -> import the saved file
 -------------------------------------------------------------------------------------
     Bash profile
 One of the first lines in .bash_profile is 'source ~/.bash_vars_company'.
@@ -35,7 +39,7 @@ RandomFractalsInc.vscode-data-preview
 sensourceinc.vscode-sql-beautify
 wholroyd.HCL
 
-
+---------------------------------------------------------------------------------------------
 
 
 
