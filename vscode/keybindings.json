@@ -347,11 +347,23 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+f",
+        "key": "cmd+2",
         "command": "workbench.action.quickOpen"
     },
     {
         "key": "cmd+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles"
     }
 ]
