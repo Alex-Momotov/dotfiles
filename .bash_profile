@@ -7,6 +7,10 @@ source ~/.bash_vars_company
 source ~/.sshrc
 
 #############################################################################################
+# Custom commands
+source ~/.custom_commands.sh
+
+#############################################################################################
 # Alisses
 
 # ssh
@@ -36,10 +40,13 @@ alias gm='git commit'
 alias ft='open . -a forklift'
 
 # docker
+alias db='docker build'
+alias dr='docker run'
 alias dc='docker container'
 alias di='docker image'
 alias ds='docker stats'
 alias de='docker exec'
+alias dv='docker volume'
 
 #############################################################################################
 # Env variables
