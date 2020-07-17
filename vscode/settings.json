@@ -1,6 +1,5 @@
 {    
     "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.enablePreview": false,
     "workbench.sideBar.location": "right",
     "terminal.integrated.cwd": "/Users/omomotov",
     "files.autoSave": "afterDelay",
@@ -17,5 +16,8 @@
     "workbench.editor.tabSizing": "shrink",
     "terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exexterm",
     "workbench.colorTheme": "Visual Studio Dark",
-    "vsnotes.defaultNotePath": "/Users/omomotov/google_drive/notes/TEMP"
+    "vsnotes.defaultNotePath": "/Users/omomotov/google_drive/notes/TEMP",
+    "zenMode.hideTabs": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.activityBar.visible": true
 }

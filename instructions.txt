@@ -35,14 +35,12 @@ This is because 'git checkout' does not work with hard links. Instead do this:
 3. Run create_links.sh and it will recreate files under "~/Library/Application Support/Code/User/"
 
 To list current extensions run in terminal: code --list-extensions
-jpogran.puppet-vscode
+hashicorp.terraform
 mohsen1.prettify-json
 ms-azuretools.vscode-docker
-ms-python.python
 nachocab.run-external
-RandomFractalsInc.vscode-data-preview
+puppet.puppet-vscode
 sensourceinc.vscode-sql-beautify
-wholroyd.HCL
 
 ---------------------------------------------------------------------------------------------
 

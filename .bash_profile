@@ -1,6 +1,6 @@
 #############################################################################################
 # Company specific vars
-source ~/.bash_vars_company
+source ~/.bash_vars_company.sh
 
 #############################################################################################
 # Command line prompt
@@ -25,6 +25,7 @@ alias t='tree'
 alias q='source ranger'
 
 # git
+alias gf='git fetch'
 alias gd='git diff'
 alias gp='git pull'
 alias gs='git status'
@@ -47,6 +48,14 @@ alias di='docker image'
 alias ds='docker stats'
 alias de='docker exec'
 alias dv='docker volume'
+
+# terraform
+alias tfenv='GREP_OPTIONS="--color=never" tfenv'
+alias tf='terraform'
+
+# kubernetes
+alias ku='kubectl'
+alias kud='kubectl -n data'
 
 #############################################################################################
 # Env variables
