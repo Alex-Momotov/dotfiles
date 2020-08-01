@@ -17,7 +17,7 @@ else
 fi
 PS1+="\[${bold}${orange}\]\w";
 PS1+="\$(parse_git_branch \"\[${white}\]\[${orange}\]\"\"\[${blue}\]\") ";  # git branch name
-PS1+="\[${reset}${bold}\]************************\n";
+PS1+="\[${reset}${bold}\]";
 PS1+="\[${reset}${bold}\]\$ \[${reset}\]";clear;
 export PS1;
 
