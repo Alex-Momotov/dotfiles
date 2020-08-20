@@ -1,6 +1,5 @@
 {    
     "workbench.editor.closeOnFileDelete": true,
-    "workbench.sideBar.location": "right",
     "terminal.integrated.cwd": "/Users/omomotov",
     "files.autoSave": "afterDelay",
     "python.pythonPath": "/Users/omomotov/.local/share/virtualenvs/python_snippets-tdcgpd36/bin/python3.7",
@@ -19,5 +18,6 @@
     "vsnotes.defaultNotePath": "/Users/omomotov/google_drive/notes/TEMP",
     "zenMode.hideTabs": false,
     "workbench.editor.enablePreview": false,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": false,
+    "debug.console.wordWrap": false
 }

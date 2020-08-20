@@ -31,6 +31,7 @@ alias gp='git pull'
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log'
+alias gll='git log --pretty=oneline'
 alias ga='git add -A'
 alias gr='git reset'
 alias gc='git checkout'
@@ -68,6 +69,9 @@ export CLASSPATH="."
 # Terminal
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# Git
+export GIT_ASKPASS=~/.github/gittoken.sh
 
 #############################################################################################
 
