@@ -19,5 +19,7 @@
     "zenMode.hideTabs": false,
     "workbench.editor.enablePreview": false,
     "workbench.activityBar.visible": false,
-    "debug.console.wordWrap": false
+    "debug.console.wordWrap": false,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false
 }
