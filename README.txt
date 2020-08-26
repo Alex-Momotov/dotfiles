@@ -1,28 +1,25 @@
--------------------------------------------------------------------------------------
-    IntelliJ Idea
+# -------------------------------------------------------------------------------------
+    # IntelliJ Idea
 "File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
--------------------------------------------------------------------------------------
-    Pycharm
+# -------------------------------------------------------------------------------------
+    # Pycharm
 "File" -> "Export settings" -> save pycharm_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
--------------------------------------------------------------------------------------
-    Bash profile
-One of the first lines in .bash_profile is 'source ~/.bash_vars_company'.
-~/.bash_vars_company contains company specific env vars which is sensitive info, so the file never leaves the laptop.
 
-~/.bash_profile is a link to ~/_projects_my/dotfiles/.bash_profile
+# -------------------------------------------------------------------------------------
+    # Bash profile
+# Syn links in ~/... point to files in  ~/_projects_my/dotfiles/... for all the below 
+# scripts except .bash_vars_company which is stored in ~/... as the only copy.
+.bash_profile		Sources .bashrc
+.bashrc 			Contains main config. Sources .sshrc, .custom_commands, .bash_vars_company
+.sshrc				Tool that copies content of .sshrc to a remote server when doing ssh. Sets command line prompt colour. "brew install sshrc"
+.custom_commands	My own bash functions and utils.
+.bash_vars_company	Sensitive company specific vars, the file is never checked into VSC.
 
--------------------------------------------------------------------------------------
-    SSHRC
-Tool that copies content of .sshrc to a remote server when doing ssh.
-
-brew install sshrc
-~/.sshrc is a link to ~/_projects_my/dotfiles/.bash_profile
-
--------------------------------------------------------------------------------------
-    VSCode
+# -------------------------------------------------------------------------------------
+    # VSCode
 Original setting files remain under ~/_projects_my/dotfiles/vscode/.
 vscode dir contains create_links.sh script. It creates hard links for keybindings.josn and settings.json 
 and a symlink for snippets directory. 
@@ -42,7 +39,7 @@ nachocab.run-external
 puppet.puppet-vscode
 sensourceinc.vscode-sql-beautify
 
----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
 
 

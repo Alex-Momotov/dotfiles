@@ -18,7 +18,7 @@
     "vsnotes.defaultNotePath": "/Users/omomotov/google_drive/notes/TEMP",
     "zenMode.hideTabs": false,
     "workbench.editor.enablePreview": false,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "debug.console.wordWrap": false,
     "editor.detectIndentation": false,
     "editor.insertSpaces": false
