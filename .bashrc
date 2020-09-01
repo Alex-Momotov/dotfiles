@@ -17,6 +17,14 @@ alias ls='ls -1'
 alias t='tree'
 alias q='source ranger'
 
+# forklift
+alias ft='open . -a forklift'
+
+# Python
+#alias python='python3'
+#alias pip='pip3'
+alias pipenvs='echo ~/.local/share/virtualenvs/ ; ls ~/.local/share/virtualenvs/'
+
 # git
 alias gf='git fetch'
 alias gd='git diff'
@@ -30,9 +38,6 @@ alias gr='git reset'
 alias gc='git checkout'
 alias gt='git stash'
 alias gm='git commit'
-
-# forklift
-alias ft='open . -a forklift'
 
 # docker
 alias db='docker build'
@@ -56,7 +61,6 @@ alias kud='kubectl -n data'
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export PATH="$PATH:/usr/libexec/"
 export CLASSPATH="."
 
 # Terminal
@@ -65,6 +69,12 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Git
 export GIT_ASKPASS=~/.github/gittoken.sh
+
+#############################################################################################
+# Other
+
+# Pyenv
+# eval "$(pyenv init -)"
 
 #############################################################################################
 

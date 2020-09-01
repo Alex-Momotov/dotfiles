@@ -1,6 +1,5 @@
 {    
-    "workbench.editor.closeOnFileDelete": true,
-    "terminal.integrated.cwd": "/Users/omomotov",
+	"workbench.editor.closeOnFileDelete": true,
     "files.autoSave": "afterDelay",
     "python.pythonPath": "/Users/omomotov/.local/share/virtualenvs/python_snippets-tdcgpd36/bin/python3.7",
     "editor.minimap.enabled": false,
@@ -21,5 +20,6 @@
     "workbench.activityBar.visible": true,
     "debug.console.wordWrap": false,
     "editor.detectIndentation": false,
-    "editor.insertSpaces": false
+	"editor.insertSpaces": false,
+	"terminal.integrated.cwd": "/Users/omomotov/"
 }
