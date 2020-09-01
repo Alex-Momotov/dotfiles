@@ -74,7 +74,7 @@ export GIT_ASKPASS=~/.github/gittoken.sh
 # Other
 
 # Pyenv
-# eval "$(pyenv init -)"
+eval "$(pyenv init -)"
 
 #############################################################################################
 
