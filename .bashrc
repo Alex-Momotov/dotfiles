@@ -15,7 +15,12 @@ function cd {
 }
 alias ls='ls -1'
 alias t='tree'
-alias q='source ranger'
+alias watch='watch '	# Make watch work with aliases
+
+
+# Brew
+alias bs='brew services'
+
 
 # forklift
 alias ft='open . -a forklift'
@@ -53,8 +58,10 @@ alias tfenv='GREP_OPTIONS="--color=never" tfenv'
 alias tf='terraform'
 
 # kubernetes
-alias ku='kubectl'
-alias kud='kubectl -n data'
+alias k=kubectl
+complete -F __start_kubectl k  # Allows alias to work with bash-completion
+alias kc='k config get-contexts'
+alias ku='k config use-context'
 
 #############################################################################################
 # Env variables
@@ -71,10 +78,14 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 export GIT_ASKPASS=~/.github/gittoken.sh
 
 #############################################################################################
-# Other
+# Code
 
-# Pyenv
+# pyenv
 eval "$(pyenv init -)"
+
+# bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+source <(kubectl completion bash)
 
 #############################################################################################
 
