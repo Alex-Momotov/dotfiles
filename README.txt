@@ -1,14 +1,14 @@
-# -------------------------------------------------------------------------------------
+_____________________________________________________________________________________________
     # IntelliJ Idea
 "File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
-# -------------------------------------------------------------------------------------
+_____________________________________________________________________________________________
     # Pycharm
 "File" -> "Export settings" -> save pycharm_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
-# -------------------------------------------------------------------------------------
+_____________________________________________________________________________________________
     # Bash profile
 # Syn links in ~/... point to files in  ~/_projects_my/dotfiles/... for all the below 
 # scripts except .bash_vars_company which is stored in ~/... as the only copy.
@@ -18,7 +18,7 @@
 .custom_commands	My own bash functions and utils.
 .bash_vars_company	Sensitive company specific vars, the file is never checked into VSC.
 
-# -------------------------------------------------------------------------------------
+_____________________________________________________________________________________________
     # VSCode
 Original setting files remain under ~/_projects_my/dotfiles/vscode/.
 vscode dir contains create_links.sh script. It creates hard links for keybindings.josn and settings.json 
@@ -39,9 +39,17 @@ nachocab.run-external
 puppet.puppet-vscode
 sensourceinc.vscode-sql-beautify
 
-# ---------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________
+	# iterm2
 
+	# Save / load settings from file
+Preferences > General tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" 
+> Browse and select .../dotfiles/iterm/iterm/iterm_settings/ dir > 'Save current settings to folder'.
 
+	# Theme (only do if theme wasn't ported with settings)
+Preferences > Profiles > Colors tab > "Color Presets" dropdown > select "Import" 
+> import the iterm/vscode.itermcolors file > Click "Color Presets" dropdown again > select the "vscode" preset.
 
+_____________________________________________________________________________________________
 
 

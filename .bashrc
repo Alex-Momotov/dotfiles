@@ -45,12 +45,9 @@ alias gt='git stash'
 alias gm='git commit'
 
 # docker
-alias db='docker build'
-alias dr='docker run'
+alias d='docker'
 alias dc='docker container'
 alias di='docker image'
-alias ds='docker stats'
-alias de='docker exec'
 alias dv='docker volume'
 
 # terraform
