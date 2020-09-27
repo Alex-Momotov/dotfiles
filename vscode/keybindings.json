@@ -414,66 +414,6 @@
         "command": "-workbench.action.focusThirdEditorGroup"
 	},
 	{
-		"key": "ctrl+t",
-		"command": "text-tables.tableModeOn",
-		"when": "editorFocus && !tableMode"
-	},
-	{
-		"key": "ctrl+q ctrl+q",
-		"command": "-text-tables.tableModeOn",
-		"when": "editorFocus && !tableMode"
-	},
-	{
-		"key": "ctrl+t",
-		"command": "text-tables.tableModeOff",
-		"when": "editorFocus && tableMode"
-	},
-	{
-		"key": "ctrl+q ctrl+q",
-		"command": "-text-tables.tableModeOff",
-		"when": "editorFocus && tableMode"
-	},
-	{
-		"key": "tab",
-		"command": "text-tables.gotoNextCell",
-		"when": "tableMode"
-	},
-	{
-		"key": "tab",
-		"command": "-text-tables.gotoNextCell",
-		"when": "tableMode"
-	},
-	{
-		"key": "shift+tab",
-		"command": "text-tables.gotoPreviousCell",
-		"when": "tableMode"
-	},
-	{
-		"key": "shift+tab",
-		"command": "-text-tables.gotoPreviousCell",
-		"when": "tableMode"
-	},
-	{
-		"key": "alt+left",
-		"command": "-text-tables.moveColLeft",
-		"when": "tableMode"
-	},
-	{
-		"key": "alt+right",
-		"command": "-text-tables.moveColRight",
-		"when": "tableMode"
-	},
-	{
-		"key": "alt+down",
-		"command": "-text-tables.moveRowDown",
-		"when": "tableMode"
-	},
-	{
-		"key": "alt+up",
-		"command": "-text-tables.moveRowUp",
-		"when": "tableMode"
-	},
-	{
 		"key": "cmd+up",
 		"command": "-cursorTop",
 		"when": "textInputFocus"
@@ -483,14 +423,6 @@
 		"command": "-cursorBottom",
 		"when": "textInputFocus"
 	},
-    {
-		"key": "ctrl+cmd+left",
-		"command": "text-tables.moveColLeft"
-	},
-	{
-		"key": "ctrl+cmd+right",
-		"command": "text-tables.moveColRight"
-    },
     {
         "key": "cmd+down",
         "command": "editor.unfold",
