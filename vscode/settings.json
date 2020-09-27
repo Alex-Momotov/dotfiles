@@ -1,7 +1,6 @@
 {    
 	"workbench.editor.closeOnFileDelete": true,
     "files.autoSave": "afterDelay",
-    "python.pythonPath": "/Users/omomotov/.local/share/virtualenvs/python_snippets-tdcgpd36/bin/python3.7",
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "workbench.tree.indent": 20,
@@ -13,12 +12,20 @@
     "workbench.editor.tabCloseButton": "off",
     "workbench.editor.tabSizing": "shrink",
 	"terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exexterm",
-    "vsnotes.defaultNotePath": "/Users/omomotov/google_drive/notes/TEMP",
     "zenMode.hideTabs": false,
     "workbench.editor.enablePreview": false,
     "workbench.activityBar.visible": true,
-    "debug.console.wordWrap": false,
+	"debug.console.wordWrap": false,
+	"terminal.integrated.cwd": "/Users/omomotov/",
+	"files.associations": {
+		"*.txt": "properties"
+	},
+	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.colorCustomizations": {
+		"terminal.selectionBackground": "#fbff00"
+    },
     "editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"terminal.integrated.cwd": "/Users/omomotov/"
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
 }

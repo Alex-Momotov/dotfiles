@@ -17,15 +17,16 @@ alias ls='ls -1'
 alias t='tree'
 alias watch='watch '	# Make watch work with aliases
 
-
-# Brew
+# brew
 alias bs='brew services'
-
 
 # forklift
 alias ft='open . -a forklift'
 
-# Python
+# yq
+alias yq='yq -C read -'
+
+# python
 #alias python='python3'
 #alias pip='pip3'
 alias pipenvs='echo ~/.local/share/virtualenvs/ ; ls ~/.local/share/virtualenvs/'
@@ -55,10 +56,13 @@ alias tfenv='GREP_OPTIONS="--color=never" tfenv'
 alias tf='terraform'
 
 # kubernetes
-alias k=kubectl
-complete -F __start_kubectl k  # Allows alias to work with bash-completion
+alias k='kubectl'
 alias kc='k config get-contexts'
-alias ku='k config use-context'
+alias kcu='k config use-context'
+function kcn() {
+	k config set-context --current --namespace=$1
+}
+alias kv='kubeval'
 
 #############################################################################################
 # Env variables
@@ -68,6 +72,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLASSPATH="."
 
 # Terminal
+export EDITOR='code -w'			# For editing kubernetes config via vscode
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
@@ -79,10 +84,6 @@ export GIT_ASKPASS=~/.github/gittoken.sh
 
 # pyenv
 eval "$(pyenv init -)"
-
-# bash-completion
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-source <(kubectl completion bash)
 
 #############################################################################################
 
