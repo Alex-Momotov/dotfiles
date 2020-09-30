@@ -3,6 +3,9 @@ ________________________________________________________________________________
 "File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
+    # IntelliJ Google code style
+Settings > Editor > Code style > Java > click cog icon > Import scheme ... > select path to 'intellij_java_google_style.xml' file > 
+> click 'Scheme' drop down, and select 'GoogleStyle' > now you can do 'Reformat Code' shortcut to reformat everything in Google code style.
 _____________________________________________________________________________________________
     # Pycharm
 "File" -> "Export settings" -> save pycharm_settings.zip in this repo
@@ -16,7 +19,7 @@ ________________________________________________________________________________
 .bashrc 			Contains main config. Sources .sshrc, .custom_commands, .bash_vars_company
 .sshrc				Tool that copies content of .sshrc to a remote server when doing ssh. Sets command line prompt colour. "brew install sshrc"
 .custom_commands	My own bash functions and utils.
-.bash_vars_company	Sensitive company specific vars, the file is never checked into VSC.
+.company_vars	    Sensitive company specific vars, the file is never checked into VSC.
 
 _____________________________________________________________________________________________
     # VSCode

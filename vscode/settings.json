@@ -24,8 +24,10 @@
 	"workbench.colorCustomizations": {
 		"terminal.selectionBackground": "#fbff00"
     },
-    "editor.detectIndentation": false,
     "[yaml]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
     },
+    "editor.insertSpaces": false,
+    "explorer.sortOrder": "filesFirst",
 }

@@ -1,7 +1,7 @@
 #############################################################################################
 source ~/.sshrc						# Command line prompt
 source ~/.custom_commands			# Custom commands
-source ~/.bash_vars_company			# Company specific vars
+source ~/.company_vars			# Company specific vars
 
 #############################################################################################
 # Alisses
@@ -72,7 +72,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLASSPATH="."
 
 # Terminal
-export EDITOR='code -w'			# For editing kubernetes config via vscode
+#export EDITOR='code -w'			# For editing kubernetes config via vscode
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
