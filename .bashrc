@@ -1,13 +1,16 @@
 #############################################################################################
 source ~/.sshrc						# Command line prompt
 source ~/.custom_commands			# Custom commands
-source ~/.company_vars			# Company specific vars
+source ~/.company_vars				# Company specific vars
 
 #############################################################################################
 # Alisses
 
 # ssh
 alias ssh='sshrc'
+
+# ranger
+alias q='source ranger'
 
 # terminal
 function cd {
@@ -64,6 +67,9 @@ function kcn() {
 }
 alias kv='kubeval'
 
+# helm
+alias h='helm'
+
 #############################################################################################
 # Env variables
 
@@ -72,7 +78,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLASSPATH="."
 
 # Terminal
-#export EDITOR='code -w'			# For editing kubernetes config via vscode
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
@@ -86,7 +91,9 @@ export GIT_ASKPASS=~/.github/gittoken.sh
 eval "$(pyenv init -)"
 
 #############################################################################################
-
+# Editors 
+ export VISUAL=nano
+ export EDITOR=nano
 
 
 

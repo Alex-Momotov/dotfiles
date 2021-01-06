@@ -377,6 +377,8 @@
 	<false/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
+	<key>DimOnlyText</key>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -444,24 +446,17 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x300000</key>
-		<dict>
-			<key>Action</key>
-			<integer>2</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf702-0x380000</key>
 		<dict>
 			<key>Action</key>
-			<integer>2</integer>
+			<integer>31</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
 		<key>0xf703-0x380000</key>
 		<dict>
 			<key>Action</key>
-			<integer>0</integer>
+			<integer>30</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -570,7 +565,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 132 224 275 0 0 2560 1417 </string>
+	<string>50 107 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>807 140 499 250 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -580,7 +575,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>48 0 2512 1417 0 0 2560 1417 </string>
+	<string>0 0 1254 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1258 5 1249 699 0 0 2560 1417 </string>
 	<key>NeverWarnAboutOverrides</key>
@@ -847,7 +842,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
+			<key>Blur Radius</key>
+			<real>20.075230012690358</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -943,6 +940,8 @@
 			<real>1.76</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1283,6 +1282,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>AppleBraille 12</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1361,7 +1362,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.01102871192893401</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1399,7 +1400,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1508, 1207}</string>
+		<string>{464, 929}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1410,7 +1411,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>577876547.05628002</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>109</integer>
+	<integer>151</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2129,16 +2130,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>event_connector_mt</string>
+		<string>topic</string>
+		<string>chata</string>
+		<string>call</string>
+		<string>routing</string>
+		<string>settings</string>
+		<string>readme</string>
 		<string>omomo</string>
 		<string>omomotov</string>
 		<string>vscode</string>
-		<string>cmd+enter</string>
-		<string>run </string>
-		<string>iterm</string>
-		<string>dedup</string>
-		<string>anonymized</string>
-		<string>xcode</string>
-		<string>code</string>
 	</array>
 	<key>NoSyncSuppressBroadcastInputWarning</key>
 	<true/>
@@ -2210,16 +2211,20 @@
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.15254875886524832</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>1</integer>
+	<integer>4</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1556367360</real>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
@@ -6434,6 +6439,8 @@
 			</dict>
 		</array>
 	</dict>
+	<key>WindowNumber</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>

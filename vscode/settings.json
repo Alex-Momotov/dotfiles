@@ -9,7 +9,7 @@
     "terminal.external.osxExec": "iTerm.app",
     "workbench.editor.openPositioning": "last",
     "workbench.statusBar.visible": false,
-    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.tabCloseButton": "left",
     "workbench.editor.tabSizing": "shrink",
 	"terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exexterm",
     "zenMode.hideTabs": false,
@@ -19,10 +19,17 @@
 	"terminal.integrated.cwd": "/Users/omomotov/",
 	"files.associations": {
 		"*.txt": "properties"
-	},
-	"workbench.colorTheme": "Visual Studio Dark",
+    },
 	"workbench.colorCustomizations": {
-		"terminal.selectionBackground": "#fbff00"
+        "terminal.selectionBackground": "#fbff00",          // terminal highlight and search
+
+        "editor.selectionBackground": "#1B5986",            // selection - background
+        // "editor.selectionHighlightBackground": "#32593D",   // strings matching selection - background
+        "editor.selectionHighlightBorder": "#61936F",       // strings matching selection - border
+
+        "editor.findMatchBackground": "#214283",            // current search match - background
+        "editor.findMatchHighlightBackground": "#32593D",   // background of other search matches
+        "editor.findMatchHighlightBorder": "#61936F",       // border of other search matches
     },
     "[yaml]": {
         "editor.tabSize": 2,
@@ -30,4 +37,5 @@
     },
     "editor.insertSpaces": false,
     "explorer.sortOrder": "filesFirst",
+    "editor.wordWrapColumn": 140,
 }
