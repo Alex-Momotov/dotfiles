@@ -2,6 +2,7 @@
 	"workbench.editor.closeOnFileDelete": true,
     "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
+    "editor.lineDecorationsWidth": 0,
     "window.zoomLevel": 0,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
@@ -14,7 +15,7 @@
 	"terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exexterm",
     "zenMode.hideTabs": false,
     "workbench.editor.enablePreview": false,
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
 	"debug.console.wordWrap": false,
 	"terminal.integrated.cwd": "/Users/omomotov/",
 	"files.associations": {

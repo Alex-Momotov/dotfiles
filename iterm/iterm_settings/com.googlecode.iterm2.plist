@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>0</integer>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -12,6 +16,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>CopySelection</key>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>vscode</key>
@@ -515,6 +521,8 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>LeftCommand</key>
+	<integer>7</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -575,7 +583,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1254 1417 0 0 2560 1417 </string>
+	<string>0 23 1389 854 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1258 5 1249 699 0 0 2560 1417 </string>
 	<key>NeverWarnAboutOverrides</key>
@@ -1398,9 +1406,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{464, 929}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1411,7 +1419,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>577876547.05628002</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>151</integer>
+	<integer>163</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2130,16 +2138,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>event_connector_mt</string>
-		<string>topic</string>
-		<string>chata</string>
-		<string>call</string>
-		<string>routing</string>
-		<string>settings</string>
-		<string>readme</string>
-		<string>omomo</string>
-		<string>omomotov</string>
-		<string>vscode</string>
+		<string>prefix</string>
+		<string>prei</string>
+		<string>kafka</string>
+		<string>all-mt</string>
+		<string>all-mo</string>
+		<string>voice</string>
+		<string>statis</string>
+		<string>status</string>
+		<string>13ab80858</string>
+		<string>topics</string>
 	</array>
 	<key>NoSyncSuppressBroadcastInputWarning</key>
 	<true/>

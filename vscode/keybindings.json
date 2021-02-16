@@ -280,10 +280,6 @@
         "when": "inSettingsSearch"
     },
     {
-        "key": "cmd+'",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
         "key": "cmd+j",
         "command": "-workbench.action.togglePanel"
     },
@@ -457,5 +453,22 @@
         "key": "cmd+i",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+cmd+'",
+        "command": "workbench.files.action.focusFilesExplorer"
     }
 ]
