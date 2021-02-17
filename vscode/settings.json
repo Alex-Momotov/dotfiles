@@ -39,4 +39,5 @@
     "editor.insertSpaces": false,
     "explorer.sortOrder": "filesFirst",
     "editor.wordWrapColumn": 140,
+    "terminal.integrated.shell.osx": "/bin/bash",
 }
