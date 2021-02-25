@@ -3,7 +3,6 @@
     "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
     "editor.lineDecorationsWidth": 0,
-    "window.zoomLevel": 0,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.iconTheme": null,

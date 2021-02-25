@@ -54,4 +54,8 @@ Preferences > Profiles > Colors tab > "Color Presets" dropdown > select "Import"
 > import the iterm/vscode.itermcolors file > Click "Color Presets" dropdown again > select the "vscode" preset.
 
 # _____________________________________________________________________________________________
+# Nano highlighting
+Follow instructions at https://github.com/scopatz/nanorc 
+
+# _____________________________________________________________________________________________
 

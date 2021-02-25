@@ -29,10 +29,11 @@ alias ft='open . -a forklift'
 # yq
 alias yq='yq -C read -'
 
-# python
-#alias python='python3'
-#alias pip='pip3'
+# pipenv
 alias pipenvs='echo ~/.local/share/virtualenvs/ ; ls ~/.local/share/virtualenvs/'
+
+# pyenv
+alias pyenvs='pyenv versions'
 
 # git
 alias gf='git fetch'

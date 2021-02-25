@@ -11,6 +11,7 @@ brew install --cask postman
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
+brew install nano
 brew install wireshark
 brew install git
 brew install hub
