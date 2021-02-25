@@ -58,4 +58,7 @@ Preferences > Profiles > Colors tab > "Color Presets" dropdown > select "Import"
 Follow instructions at https://github.com/scopatz/nanorc 
 
 # _____________________________________________________________________________________________
+# Ranger highlighting
+brew install highlight		# syntax highlighting in ranger preview (ranger supports highlight package)
+
 
