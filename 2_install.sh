@@ -35,3 +35,25 @@ brew install sshrc
 brew install tfenv
 brew install tree
 brew install watch
+
+# Duti file associations
+duti -s com.microsoft.VSCode .css all
+duti -s com.microsoft.VSCode .go all
+duti -s com.microsoft.VSCode .java all
+duti -s com.microsoft.VSCode .js all
+duti -s com.microsoft.VSCode .cfg all
+duti -s com.microsoft.VSCode .json all
+duti -s com.microsoft.VSCode .md all
+duti -s com.microsoft.VSCode .py all
+duti -s com.microsoft.VSCode .rb all
+duti -s com.microsoft.VSCode .rs all
+duti -s com.microsoft.VSCode .sh all
+duti -s com.microsoft.VSCode .swift all
+duti -s com.microsoft.VSCode .txt all
+duti -s com.microsoft.VSCode .conf all
+duti -s com.microsoft.VSCode .properties all
+duti -s com.microsoft.VSCode .yaml all
+duti -s com.microsoft.VSCode .yml all
+duti -s com.microsoft.VSCode .xml all
+duti -s com.microsoft.VSCode .Jenkinsfile all
+duti -s com.microsoft.VSCode Jenkinsfile all

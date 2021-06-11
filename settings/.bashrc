@@ -1,10 +1,13 @@
-#############################################################################################
+############################################################################################
 source ~/.sshrc						# Command line prompt
 source ~/.custom_commands			# Custom commands
 source ~/.company_vars				# Company specific vars
 
-#############################################################################################
-# Alisses
+# Hide message about zsh being default shell
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+############################################################################################
+# Alises
 
 # ssh
 alias ssh='sshrc'
@@ -51,6 +54,7 @@ alias gm='git commit'
 
 # docker
 alias d='docker'
+alias dr='docker run'
 alias dc='docker container'
 alias di='docker image'
 alias dv='docker volume'
@@ -71,12 +75,19 @@ alias kv='kubeval'
 # helm
 alias h='helm'
 
+# kafkacat
+alias kaf='kafkacat'
+
 #############################################################################################
 # Env variables
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLASSPATH="."
+
+# Groovy
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
 
 # Terminal
 export CLICOLOR=1

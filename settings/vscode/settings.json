@@ -1,22 +1,16 @@
 {    
+    "update.mode": "none",                          // prevent VSCode auto update (keep version where terminal splitting works)
 	"workbench.editor.closeOnFileDelete": true,
     "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
     "editor.lineDecorationsWidth": 0,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.iconTheme": null,
     "terminal.external.osxExec": "iTerm.app",
-    "workbench.editor.openPositioning": "last",
     "workbench.statusBar.visible": false,
     "workbench.editor.tabCloseButton": "left",
-    "workbench.editor.tabSizing": "shrink",
-	"terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exexterm",
     "zenMode.hideTabs": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.activityBar.visible": false,
 	"debug.console.wordWrap": false,
-	"terminal.integrated.cwd": "/Users/omomotov/",
 	"files.associations": {
 		"*.txt": "properties"
     },
@@ -36,7 +30,22 @@
         "editor.insertSpaces": true
     },
     "editor.insertSpaces": false,
-    "explorer.sortOrder": "filesFirst",
     "editor.wordWrapColumn": 140,
-    "terminal.integrated.shell.osx": "/bin/bash",
+    "workbench.startupEditor": "newUntitledFile",
+    "git.enabled": true,
+    "editor.quickSuggestions": false,
+    "editor.tabCompletion": "onlySnippets",
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.activityBar.visible": false,
+    "material-icon-theme.folders.theme": "none",
+    "material-icon-theme.hidesExplorerArrows": false,
+    "material-icon-theme.activeIconPack": "angular",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Darcula",
+    "explorer.confirmDelete": false,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cwd": "/Users/omomotov"
 }
