@@ -15,7 +15,7 @@
 		"*.txt": "properties"
     },
 	"workbench.colorCustomizations": {
-        "terminal.selectionBackground": "#fbff00",          // terminal highlight and search
+        "terminal.selectionBackground": "#fbff008a",          // terminal highlight and search
 
         "editor.selectionBackground": "#1B5986",            // selection - background
         // "editor.selectionHighlightBackground": "#32593D",   // strings matching selection - background
@@ -46,6 +46,11 @@
     "workbench.colorTheme": "Darcula",
     "explorer.confirmDelete": false,
     "editor.smoothScrolling": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cwd": "/Users/omomotov"
+    "terminal.integrated.cwd": "/Users/omomotov",
+    // "window.zoomLevel": -0.1,
+    "editor.fontSize": 12,
+    "explorer.autoReveal": false,
+    "workbench.sideBar.location": "left",
+    "breadcrumbs.enabled": false,
+    "window.zoomLevel": 0
 }

@@ -21,6 +21,12 @@ Settings > Editor > Code style > Java > click cog icon > Import scheme ... > sel
 .company_vars	    Sensitive company specific vars, the file is never checked into VSC.
 
 # _____________________________________________________________________________________________
+# Karabiner
+# Used to create mouse key binding for command-M key press (minimise window).
+brew install --cask karabiner-elements
+cp settings/karabiner/minimise.json ~/.config/karabiner/assets/complex_modifications/
+
+# _____________________________________________________________________________________________
 # VSCode
 
 # Installation
@@ -35,16 +41,14 @@ This is because 'git checkout' does not work with hard links. Instead do this:
 3. Run create_links.sh and it will recreate files under "~/Library/Application Support/Code/User/"
 
 To list current extensions run in terminal: code --list-extensions
-formulahendry.auto-close-tag
-hashicorp.terraform
-IronGeek.vscode-env
-janisdd.vscode-edit-csv
-jpogran.puppet-vscode
-mohsen1.prettify-json
-PKief.material-icon-theme
-rokoroku.vscode-theme-darcula
-ronnidc.nunjucks
-zerodind.familiar-java-themes
+# fabiospampinato.vscode-diff
+# hashicorp.terraform
+# mohsen1.prettify-json
+# PKief.material-icon-theme
+# puppet.puppet-vscode
+# rokoroku.vscode-theme-darcula
+# tomoki1207.pdf
+# wholroyd.HCL
 
 # _____________________________________________________________________________________________
 # Hub (cli for GitHub)

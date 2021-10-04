@@ -533,5 +533,13 @@
     {
         "key": "cmd+]",
         "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.extensions"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-workbench.view.extensions"
     }
 ]

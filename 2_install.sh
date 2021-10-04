@@ -11,6 +11,7 @@ brew install --cask postman
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
+brew install --cask karabiner-elements
 brew install nano
 brew install highlight
 brew install wireshark

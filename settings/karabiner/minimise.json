@@ -1,0 +1,35 @@
+{
+	"title": "Minimise window",
+	"rules": [
+	  {
+		"description": "Minimise current window.",
+		"manipulators": [
+		  {
+			"type": "basic",
+			"from": {
+			  "pointing_button": "button5"
+			},
+			"to": [
+			  {
+				"key_code": "m",
+				"modifiers": "left_command"
+			  }
+			]
+		  },
+		  {
+			"type": "basic",
+			"from": {
+			  "pointing_button": "button4"
+			},
+			"to": [
+			  {
+				"key_code": "m",
+				"modifiers": "left_command"
+			  }
+			]
+		  }
+		]
+	  }
+	]  
+}
+  
