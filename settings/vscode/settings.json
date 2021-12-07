@@ -11,9 +11,6 @@
     "workbench.editor.tabCloseButton": "left",
     "zenMode.hideTabs": false,
 	"debug.console.wordWrap": false,
-	"files.associations": {
-		"*.txt": "properties"
-    },
 	"workbench.colorCustomizations": {
         "terminal.selectionBackground": "#fbff008a",          // terminal highlight and search
 
@@ -49,8 +46,14 @@
     "terminal.integrated.cwd": "/Users/omomotov",
     // "window.zoomLevel": -0.1,
     "editor.fontSize": 12,
-    "explorer.autoReveal": false,
     "workbench.sideBar.location": "left",
     "breadcrumbs.enabled": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "files.associations": {
+        "*enkinsfile*": "groovy",
+        "*.txt": "properties"
+    }
 }

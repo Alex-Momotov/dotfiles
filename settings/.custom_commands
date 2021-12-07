@@ -14,5 +14,9 @@
 #     fi
 # }
 
-
+function gh() {
+	git add -A
+	git commit -m "inconsequential commit"
+	git push
+}
 

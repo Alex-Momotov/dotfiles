@@ -50,6 +50,9 @@ To list current extensions run in terminal: code --list-extensions
 # tomoki1207.pdf
 # wholroyd.HCL
 
+Run in terninal:
+Terminal: run selected text in active terminal
+
 # _____________________________________________________________________________________________
 # Hub (cli for GitHub)
 1. brew install hub

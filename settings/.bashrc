@@ -82,7 +82,7 @@ alias kaf='kafkacat'
 # Env variables
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export CLASSPATH="."
 
 # Groovy

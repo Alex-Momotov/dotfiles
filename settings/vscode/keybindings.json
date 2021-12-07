@@ -219,11 +219,11 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+cmd+down",
+        "key": "ctrl+cmd+pagedown",
         "command": "editor.action.moveLinesDownAction"
     },
     {
-        "key": "ctrl+cmd+up",
+        "key": "ctrl+cmd+pageup",
         "command": "editor.action.moveLinesUpAction"
     },
     {
@@ -332,10 +332,6 @@
     {
         "key": "cmd+\\",
         "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "cmd+enter",
-        "command": "workbench.action.terminal.runSelectedText"
     },
     {
         "key": "ctrl+f",
@@ -468,7 +464,7 @@
         "command": "workbench.files.action.focusFilesExplorer"
     },
     {
-        "key": "shift+cmd+'",
+        "key": "cmd+'",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
@@ -541,5 +537,21 @@
     {
         "key": "shift+cmd+x",
         "command": "-workbench.view.extensions"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.terminal.runSelectedText"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "workbench.action.terminal.focusNextPane"
+    },
+    {
+        "key": "cmd+s",
+        "command": "workbench.view.search.focus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.splitEditorDown"
     }
 ]
