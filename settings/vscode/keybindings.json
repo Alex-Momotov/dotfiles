@@ -553,5 +553,9 @@
     {
         "key": "ctrl+h",
         "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.splitInActiveWorkspace"
     }
 ]

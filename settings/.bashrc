@@ -84,6 +84,7 @@ alias kaf='kafkacat'
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export CLASSPATH="."
+export PATH=$PATH:/usr/libexec/
 
 # Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -104,8 +105,8 @@ eval "$(pyenv init -)"
 
 #############################################################################################
 # Editors 
- export VISUAL=nano
- export EDITOR=nano
+export VISUAL=nano
+export EDITOR=nano
 
 
 
