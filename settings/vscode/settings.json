@@ -34,7 +34,6 @@
     "editor.tabCompletion": "onlySnippets",
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.tabSizing": "shrink",
     "workbench.activityBar.visible": false,
     "material-icon-theme.folders.theme": "none",
     "material-icon-theme.hidesExplorerArrows": false,
@@ -42,17 +41,35 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Darcula",
     "explorer.confirmDelete": false,
-    "editor.smoothScrolling": true,
     "terminal.integrated.cwd": "/Users/omomotov",
-    "editor.fontSize": 12,
+    "editor.fontSize": 13,
     "workbench.sideBar.location": "left",
     "breadcrumbs.enabled": false,
-    "window.zoomLevel": 0.1,
+    "window.zoomLevel": 0,
     "explorer.confirmDragAndDrop": false,
 
     "files.associations": {
         "*enkinsfile*": "groovy",
         "*.txt": "properties"
     },
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    
+    // java
+    "java.configuration.runtimes": [
+        {
+          "name": "JavaCorreto11",
+          "path": "/Users/omomotov/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home",
+          "default":  true
+        }
+    ],
+    "editor.copyWithSyntaxHighlighting": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.configuration.checkProjectSettingsExclusions": false
 }
