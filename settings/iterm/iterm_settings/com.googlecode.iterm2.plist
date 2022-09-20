@@ -379,6 +379,8 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>EnableDivisionView</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -508,6 +510,8 @@
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
+	<true/>
+	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
 	<false/>
@@ -878,7 +882,7 @@
 			<key>Guid</key>
 			<string>5785115C-5B20-4910-B4B3-F40A07140DE9</string>
 			<key>Horizontal Spacing</key>
-			<real>1.76</real>
+			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
@@ -1222,7 +1226,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>AppleBraille 12</string>
+			<string>Monaco 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1315,7 +1319,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.93000000000000005</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2124,6 +2128,8 @@
 			<string>/Users/omomotov</string>
 		</dict>
 	</array>
+	<key>PerPaneBackgroundImage</key>
+	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2161,10 +2167,14 @@
 	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.15254875886524832</real>
+	<real>0.15400582804000587</real>
+	<key>StatusBarPosition</key>
+	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>

@@ -1,3 +1,9 @@
+# _____________________________________________________________________________________________
+# New computer
+1. Intall google drive manually and set it up to mirror files to ~/_drive
+2. Run 1_mac_settings.sh script and restart computer
+3. Run 2_recreate_sym_links.sh script then open new terminal window and check all custom aliases and functions
+4. Run 3_install.sh script 
 
 # _____________________________________________________________________________________________
 # IntelliJ Idea
@@ -74,9 +80,3 @@ Preferences > Profiles > Colors tab > "Color Presets" dropdown > select "Import"
 # _____________________________________________________________________________________________
 # Nano highlighting
 Follow instructions at https://github.com/scopatz/nanorc 
-
-# _____________________________________________________________________________________________
-# Ranger highlighting
-brew install highlight		# syntax highlighting in ranger preview (ranger supports highlight package)
-
-

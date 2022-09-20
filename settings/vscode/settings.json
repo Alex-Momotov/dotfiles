@@ -71,5 +71,6 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "java.configuration.checkProjectSettingsExclusions": false
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "terminal.integrated.shell.osx": "/bin/bash"
 }

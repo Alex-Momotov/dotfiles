@@ -51,6 +51,7 @@ alias gr='git reset'
 alias gc='git checkout'
 alias gt='git stash'
 alias gm='git commit'
+alias gu='git push -u origin `parse_git_branch`'
 
 # docker
 alias d='docker'
@@ -89,8 +90,8 @@ alias mr='mvn resources:resources compiler:compile exec:java'
 alias mj='mvn jar:jar shade:shade'
 
 # gradle
-alias g='gradle --console=verbose'
-alias gw='./gradlew --console=verbose'
+alias g='gradle --stop; gradle --console=verbose'
+alias gw='./gradlew --stop; ./gradlew --console=verbose'
 
 # vonage aws
 alias v='vonage-aws'
@@ -113,6 +114,9 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Git
 export GIT_ASKPASS=~/.github/gittoken.sh
+
+# Brew
+export PATH=/opt/homebrew/bin:$PATH
 
 #############################################################################################
 # Code

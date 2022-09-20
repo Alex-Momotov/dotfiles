@@ -1,11 +1,10 @@
-brew install --cask google-backup-and-sync
 brew install --cask forklift
 brew install --cask slack
 brew install --cask vivaldi
+brew install --cask firefox
 brew install --cask iterm2
-brew install --cask visual-studio-code
-brew install --cask intellij-idea
-brew install --cask pycharm
+brew install --cask intellij-idea-ce
+brew install --cask pycharm-ce
 brew install --cask datagrip
 brew install --cask postman
 brew install --cask anki
@@ -13,7 +12,7 @@ brew install --cask postman
 brew install --cask spectacle
 brew install --cask karabiner-elements
 brew install nano
-brew install highlight
+brew install highlight		# highlighting for nano
 brew install wireshark
 brew install git
 brew install hub
@@ -36,6 +35,7 @@ brew install sshrc
 brew install tfenv
 brew install tree
 brew install watch
+brew install yt-dlp/taps/yt-dlp		# youtube video downloader
 
 # Duti file associations
 duti -s com.microsoft.VSCode .css all
