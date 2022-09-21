@@ -29,8 +29,16 @@ pycharm
 'File' > 'Manage IDE Settings' > 'Export settings' > save pycharm_settings.zip in this repo
 
 git
-Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
-
+- git config --global user.name Alex-Momotov
+- git config --global user.email momotovalex@gmail.com
+- cd ~/.ssh; ssh-keygen -t ed25519 -C "momotovalex@gmail.com"		# generate new ssh key, don't use passphrase
+- touch ~/.ssh/config # then append following to ~/.ssh/config. Make sure to use correct private key filename
+  Host *
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/key
+- ssh-add -K ~/.ssh/key		# make sure to use correct private key filename
+- Add the new key (public part) to your github account via the website > configure SSO > authorise all organisations
+- Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
 
 
 # _____________________________________________________________________________________________

@@ -100,9 +100,9 @@ alias v='vonage-aws'
 # Env variables
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-export CLASSPATH="."
-export PATH=$PATH:/usr/libexec/
+# export JAVA_HOME=`/usr/libexec/java_home -v 11`
+# export CLASSPATH="."
+# export PATH=$PATH:/usr/libexec/
 
 # Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
