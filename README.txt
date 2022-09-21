@@ -1,17 +1,21 @@
 # _____________________________________________________________________________________________
 # NEW COMPUTER SETUP 
 basics
+0. mkdir ~/_drive
 1. Intall google drive manually and set it up to mirror files to ~/_drive
 2. bash 0_new_computer.sh
+   Then create sim links for openjdk installations (commands are in output of brew install).
 3. bash 1_recreate_sym_links.sh
 
 vivaldi
 - Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
 - Login to Vovaldi & enable settings sync
 - set it as default browser in System Preferences
+- shortcut: 'bookmark panel': cmd+B
 
 vscode
 - bash 2_vscode_create_links.sh
+- activate dracula theme and material icon theme from command palette
 
 iterm
 - preferences > general tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder' > also select 'save changes': 'automatically'
@@ -39,6 +43,13 @@ git
 - ssh-add -K ~/.ssh/key		# make sure to use correct private key filename
 - Add the new key (public part) to your github account via the website > configure SSO > authorise all organisations
 - Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
+
+system preferences
+- trackpad scrolling speed
+- mouth scrolling speed
+- turn off scrolling inertia
+- shortcut to minimise window with cmd+m
+- turn off 'show recent applications in dock'
 
 
 # _____________________________________________________________________________________________

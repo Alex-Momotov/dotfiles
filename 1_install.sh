@@ -1,8 +1,3 @@
-# create dirs, install brew, make bash default
-mkdir ~/_docs ~/_projects ~/_resources ~/_workspace ~/_workspace2; touch ~/.company_vars	# create home dirs
-chsh -s /bin/bash       # switch default shell to bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"     # install brew
-
 # mac settings
 defaults write -g InitialKeyRepeat -int 24 # Delay before key repeat, default min is 15
 defaults write -g KeyRepeat -int 1 # Key repeat speed
@@ -19,6 +14,7 @@ brew install --cask pycharm-ce
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
+brew install --cask tunnelblick
 brew install nano
 brew install highlight		# highlighting for nano
 brew install wireshark
@@ -72,7 +68,7 @@ duti -s com.microsoft.VSCode .Jenkinsfile all
 duti -s com.microsoft.VSCode Jenkinsfile all
 
 # vscode extentions
-code --install-extension ms-vscode.cpptools tomoki1207.pdf
-code --install-extension ms-vscode.cpptools mohsen1.prettify-json
-code --install-extension ms-vscode.cpptools PKief.material-icon-theme
-code --install-extension ms-vscode.cpptools rokoroku.vscode-theme-darcula
+code --install-extension tomoki1207.pdf
+code --install-extension mohsen1.prettify-json
+code --install-extension PKief.material-icon-theme
+code --install-extension rokoroku.vscode-theme-darcula
