@@ -1,18 +1,32 @@
 # _____________________________________________________________________________________________
 # New computer
 1. Intall google drive manually and set it up to mirror files to ~/_drive
-2. Run 1_mac_settings.sh script and restart computer
-3. Run 2_recreate_sym_links.sh script then open new terminal window and check all custom aliases and functions
-4. Run 3_install.sh script 
+2. bash 0_new_computer.sh
+3. bash 2_recreate_sym_links.sh
+
+
+vivaldi
+- Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
+- Login to Vovaldi & enable settings sync
+
+# _____________________________________________________________________________________________
+# VSCode
+
+# Installation
+1. Initall VSCode version Jan 2020 (before terminal split feature got broken) manually from link https://code.visualstudio.com/updates/v1_42
+2. Run vscode_create_links.sh It adds the setting to disable auto-update, it also creates hard links for keybindings.josn and settings.json and a symlink for snippets directory.
+
+# Extensions (code --list-extensions)
+tomoki1207.pdf
+mohsen1.prettify-json
+PKief.material-icon-theme
+rokoroku.vscode-theme-darcula
 
 # _____________________________________________________________________________________________
 # IntelliJ Idea
 "File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
 
-# IntelliJ Google code style
-Settings > Editor > Code style > Java > click cog icon > Import scheme ... > select path to 'intellij_java_google_style.xml' file > 
-> click 'Scheme' drop down, and select 'GoogleStyle' > now you can do 'Reformat Code' shortcut to reformat everything in Google code style.
 # _____________________________________________________________________________________________
 # Pycharm
 "File" -> "Export settings" -> save pycharm_settings.zip in this repo
@@ -27,38 +41,7 @@ Settings > Editor > Code style > Java > click cog icon > Import scheme ... > sel
 .custom_commands	My own bash functions and utils.
 .company_vars	    Sensitive company specific vars, the file is never checked into VSC.
 
-# _____________________________________________________________________________________________
-# Karabiner
-# Used to create mouse key binding for command-M key press (minimise window).
-brew install --cask karabiner-elements
-cp settings/karabiner/minimise.json ~/.config/karabiner/assets/complex_modifications/
 
-# _____________________________________________________________________________________________
-# VSCode
-
-# Installation
-1. Initall VSCode version Jan 2020 (before terminal split feature got broken) manually from link https://code.visualstudio.com/updates/v1_42
-2. Run vscode_create_links.sh It adds the setting to disable auto-update, it also creates hard links for keybindings.josn and settings.json and a symlink for snippets directory.
-
-If you change vscode settings, the changes will be reflected in the ~/_projects_my/dotfiles/settings/vscode/ dir.
-HOWEVER! If you 'git checkout' unwanted chenges in dotfiles dir, your VSCode settings will still be the same.
-This is because 'git checkout' does not work with hard links. Instead do this:
-1. git checkout unwanted changes
-2. git add + git commit wanted changes
-3. Run create_links.sh and it will recreate files under "~/Library/Application Support/Code/User/"
-
-To list current extensions run in terminal: code --list-extensions
-# fabiospampinato.vscode-diff
-# hashicorp.terraform
-# mohsen1.prettify-json
-# PKief.material-icon-theme
-# puppet.puppet-vscode
-# rokoroku.vscode-theme-darcula
-# tomoki1207.pdf
-# wholroyd.HCL
-
-Run in terninal:
-Terminal: run selected text in active terminal
 
 # _____________________________________________________________________________________________
 # Hub (cli for GitHub)

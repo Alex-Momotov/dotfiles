@@ -1,3 +1,17 @@
+# brew, bash, dirs
+pushd ~; mkdir mkdir _docs _projects _resources _workspace _workspace2; touch .company_vars; popd;	# create home dirs
+chsh -s /bin/bash       # switch default shell to bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"     # install brew
+
+# mac settings
+defaults write -g InitialKeyRepeat -int 20 # Delay before key repeat, default min is 15
+defaults write -g KeyRepeat -int 1 # Key repeat speed
+defaults write -g com.apple.trackpad.scaling -float 20.0 # Trackpad speed
+defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
+
+# install software
+brew install --cask google-drive
+brew install --cask visual-studio-code
 brew install --cask forklift
 brew install --cask slack
 brew install --cask vivaldi
@@ -10,7 +24,6 @@ brew install --cask postman
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
-brew install --cask karabiner-elements
 brew install nano
 brew install highlight		# highlighting for nano
 brew install wireshark
