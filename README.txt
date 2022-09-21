@@ -1,20 +1,17 @@
 # _____________________________________________________________________________________________
 # NEW COMPUTER SETUP 
-basics
-0. mkdir ~/_drive
-1. Intall google drive manually and set it up to mirror files to ~/_drive
-2. bash 0_new_computer.sh
-   Then create sim links for openjdk installations (commands are in output of brew install).
-3. bash 1_recreate_sym_links.sh
+1. curl https://raw.githubusercontent.com/alex-momotov/dotfiles/master/0_pre_install.sh | bash    # installs brew and google drive, creates all dirs
+2. login to google drive desktop app and set it to mirror files to ~/_drive (look up google password in bitwarden website, not extention)
+3. bash ~/_docs/_projects/dotfiles/0_install.sh
+4. Create sym links for openjdk installations (commands are in output of 0_install.sh).
 
 vivaldi
 - Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
-- Login to Vovaldi & enable settings sync
+- Login to Vivaldi & enable settings sync
 - set it as default browser in System Preferences
 - shortcut: 'bookmark panel': cmd+B
 
 vscode
-- bash 2_vscode_create_links.sh
 - activate dracula theme and material icon theme from command palette
 
 iterm
@@ -45,6 +42,7 @@ git
 - Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
 
 system preferences
+- dock on left side, put all apps on it
 - trackpad scrolling speed
 - mouth scrolling speed
 - turn off scrolling inertia

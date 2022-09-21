@@ -31,8 +31,6 @@ brew install kafka
 brew install kafkacat
 brew install mysql
 brew install nmap
-brew install openjdk@11
-brew install openjdk@8
 brew install pyenv
 brew install wget
 brew install ranger
@@ -41,6 +39,8 @@ brew install tfenv
 brew install tree
 brew install watch
 brew install yt-dlp/taps/yt-dlp		# youtube video downloader
+brew install openjdk@11
+brew install openjdk@8
 
 # nano highlighting 	(if doesn't work follow instructions at https://github.com/scopatz/nanorc)
 wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
@@ -67,8 +67,28 @@ duti -s com.microsoft.VSCode .xml all
 duti -s com.microsoft.VSCode .Jenkinsfile all
 duti -s com.microsoft.VSCode Jenkinsfile all
 
+# vscode recreate links
+rm /Users/omomotov/Library/Application\ Support/Code/User/settings.json
+rm /Users/omomotov/Library/Application\ Support/Code/User/keybindings.json
+rm -rf /Users/omomotov/Library/Application\ Support/Code/User/snippets
+ln ~/_docs/_projects/dotfiles/settings/vscode/settings.json /Users/omomotov/Library/Application\ Support/Code/User/settings.json
+ln ~/_docs/_projects/dotfiles/settings/vscode/keybindings.json /Users/omomotov/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/_docs/_projects/dotfiles/settings/vscode/snippets/ /Users/omomotov/Library/Application\ Support/Code/User/
+
 # vscode extentions
 code --install-extension tomoki1207.pdf
 code --install-extension mohsen1.prettify-json
 code --install-extension PKief.material-icon-theme
 code --install-extension rokoroku.vscode-theme-darcula
+
+# bashrc recreate sym links
+rm -rf ~/.bashrc
+rm -rf ~/.bash_profile
+rm -rf ~/.custom_commands
+rm -rf ~/.sshrc
+rm -rf ~/.vimrc
+ln -s ~/_docs/_projects/dotfiles/settings/.bashrc ~/.bashrc
+ln -s ~/_docs/_projects/dotfiles/settings/.bash_profile ~/.bash_profile
+ln -s ~/_docs/_projects/dotfiles/settings/.custom_commands ~/.custom_commands
+ln -s ~/_docs/_projects/dotfiles/settings/.sshrc ~/.sshrc
+ln -s ~/_docs/_projects/dotfiles/settings/.vimrc ~/.vimrc
