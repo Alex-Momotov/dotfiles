@@ -1,5 +1,5 @@
-# brew, bash, dirs
-pushd ~; mkdir mkdir _docs _projects _resources _workspace _workspace2; touch .company_vars; popd;	# create home dirs
+# create dirs, install brew, make bash default
+mkdir ~/_docs ~/_projects ~/_resources ~/_workspace ~/_workspace2; touch ~/.company_vars	# create home dirs
 chsh -s /bin/bash       # switch default shell to bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"     # install brew
 
@@ -10,7 +10,6 @@ defaults write -g com.apple.trackpad.scaling -float 20.0 # Trackpad speed
 defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
 
 # install software
-brew install --cask google-drive
 brew install --cask visual-studio-code
 brew install --cask forklift
 brew install --cask slack
@@ -43,12 +42,16 @@ brew install nmap
 brew install openjdk@11
 brew install openjdk@8
 brew install pyenv
+brew install wget
 brew install ranger
 brew install sshrc
 brew install tfenv
 brew install tree
 brew install watch
 brew install yt-dlp/taps/yt-dlp		# youtube video downloader
+
+# nano highlighting 	(if doesn't work follow instructions at https://github.com/scopatz/nanorc)
+wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 
 # Duti file associations
 duti -s com.microsoft.VSCode .css all
@@ -71,3 +74,9 @@ duti -s com.microsoft.VSCode .yml all
 duti -s com.microsoft.VSCode .xml all
 duti -s com.microsoft.VSCode .Jenkinsfile all
 duti -s com.microsoft.VSCode Jenkinsfile all
+
+# vscode extentions
+code --install-extension ms-vscode.cpptools tomoki1207.pdf
+code --install-extension ms-vscode.cpptools mohsen1.prettify-json
+code --install-extension ms-vscode.cpptools PKief.material-icon-theme
+code --install-extension ms-vscode.cpptools rokoroku.vscode-theme-darcula
