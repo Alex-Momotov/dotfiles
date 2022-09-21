@@ -14,11 +14,6 @@
 #     fi
 # }
 
-function gh() {
-	git add -A
-	git commit -m "inconsequential commit"
-	git push
-}
 
 function kafkarestart() {
 	brew services stop kafka && brew services stop zookeeper && sleep 5 && brew services start zookeeper && sleep 25 && brew services start kafka && sleep 45 && kafka-topics --list --bootstrap-server localhost:9092
