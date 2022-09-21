@@ -13,6 +13,10 @@ vivaldi
 vscode
 - bash 2_vscode_create_links.sh
 
+iterm
+1. preferences > general tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder' > also select 'save changes': 'automatically'
+2. close iterm > git checkout settings/iterm/iterm_settings/com.googlecode.iterm2.plist
+
 intellij
 "File" -> "Export settings" -> save intellij_settings.zip in this repo
 "File" -> "Import settings" -> import the saved file
@@ -27,7 +31,6 @@ export GITHUB_TOKEN=12345
 
 # _____________________________________________________________________________________________
 # INFO
-
 bash profile files
 Syn links in ~/... point to files in  ~/_projects_my/dotfiles/settings/... for all the below scripts except .bash_vars_company which is stored in ~/... as the only copy.
 .bash_profile		Sources .bashrc
@@ -36,12 +39,6 @@ Syn links in ~/... point to files in  ~/_projects_my/dotfiles/settings/... for a
 .custom_commands	My own bash functions and utils.
 .company_vars	    Sensitive company specific vars, the file is never checked into VSC.
 
-iterm2
-# Save / load settings
-Preferences > General tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder'.
 
-# Theme (only do if theme wasn't ported with settings)
-Preferences > Profiles > Colors tab > "Color Presets" dropdown > select "Import" 
-> import the iterm/vscode.itermcolors file > Click "Color Presets" dropdown again > select the "vscode" preset.
 
 
