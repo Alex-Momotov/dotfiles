@@ -1,24 +1,32 @@
-brew install --cask google-backup-and-sync
+# create dirs, install brew, make bash default
+mkdir ~/_docs ~/_projects ~/_resources ~/_workspace ~/_workspace2; touch ~/.company_vars	# create home dirs
+chsh -s /bin/bash       # switch default shell to bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"     # install brew
+
+# mac settings
+defaults write -g InitialKeyRepeat -int 24 # Delay before key repeat, default min is 15
+defaults write -g KeyRepeat -int 1 # Key repeat speed
+defaults write -g com.apple.trackpad.scaling -float 20.0 # Trackpad speed
+defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
+
+# install software
+brew install --cask visual-studio-code
 brew install --cask forklift
-brew install --cask slack
 brew install --cask vivaldi
 brew install --cask iterm2
-brew install --cask visual-studio-code
-brew install --cask intellij-idea
-brew install --cask pycharm
-brew install --cask datagrip
-brew install --cask postman
+brew install --cask intellij-idea-ce
+brew install --cask pycharm-ce
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
-brew install --cask karabiner-elements
 brew install nano
-brew install highlight
+brew install highlight		# highlighting for nano
 brew install wireshark
 brew install git
 brew install hub
 brew install duti
 brew install gradle
+brew install maven
 brew install helm
 brew install helmfile
 brew install htop
@@ -26,16 +34,20 @@ brew install jq
 brew install kafka
 brew install kafkacat
 brew install mysql
-brew install maven
 brew install nmap
 brew install openjdk@11
 brew install openjdk@8
 brew install pyenv
+brew install wget
 brew install ranger
 brew install sshrc
 brew install tfenv
 brew install tree
 brew install watch
+brew install yt-dlp/taps/yt-dlp		# youtube video downloader
+
+# nano highlighting 	(if doesn't work follow instructions at https://github.com/scopatz/nanorc)
+wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 
 # Duti file associations
 duti -s com.microsoft.VSCode .css all
@@ -58,3 +70,9 @@ duti -s com.microsoft.VSCode .yml all
 duti -s com.microsoft.VSCode .xml all
 duti -s com.microsoft.VSCode .Jenkinsfile all
 duti -s com.microsoft.VSCode Jenkinsfile all
+
+# vscode extentions
+code --install-extension ms-vscode.cpptools tomoki1207.pdf
+code --install-extension ms-vscode.cpptools mohsen1.prettify-json
+code --install-extension ms-vscode.cpptools PKief.material-icon-theme
+code --install-extension ms-vscode.cpptools rokoroku.vscode-theme-darcula

@@ -2,7 +2,6 @@
 
 rm /Users/omomotov/Library/Application\ Support/Code/User/settings.json
 rm /Users/omomotov/Library/Application\ Support/Code/User/keybindings.json
-rm /Users/omomotov/Library/Application\ Support/Code/User/snippets
 rm -rf /Users/omomotov/Library/Application\ Support/Code/User/snippets
 
 

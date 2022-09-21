@@ -51,6 +51,7 @@ alias gr='git reset'
 alias gc='git checkout'
 alias gt='git stash'
 alias gm='git commit'
+alias gu='git push -u origin `parse_git_branch`'
 
 # docker
 alias d='docker'
@@ -78,13 +79,30 @@ alias h='helm'
 # kafkacat
 alias kaf='kafkacat'
 
+# maven
+alias ma='mvn archetype:generate'
+alias m='mvn clean'
+alias mc='mvn resources:resources compiler:compile'
+alias mct='mvn resources:testResources compiler:testCompile'
+alias mt='mvn surefire:test'
+alias me='mvn compiler:compile exec:java'
+alias mr='mvn resources:resources compiler:compile exec:java'
+alias mj='mvn jar:jar shade:shade'
+
+# gradle
+alias g='gradle --stop; gradle --console=verbose'
+alias gw='./gradlew --stop; ./gradlew --console=verbose'
+
+# vonage aws
+alias v='vonage-aws'
+
 #############################################################################################
 # Env variables
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-export CLASSPATH="."
-export PATH=$PATH:/usr/libexec/
+# export JAVA_HOME=`/usr/libexec/java_home -v 11`
+# export CLASSPATH="."
+# export PATH=$PATH:/usr/libexec/
 
 # Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -96,6 +114,9 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Git
 export GIT_ASKPASS=~/.github/gittoken.sh
+
+# Brew
+export PATH=/opt/homebrew/bin:$PATH
 
 #############################################################################################
 # Code
@@ -111,3 +132,5 @@ export EDITOR=nano
 
 
 
+
+PS1="${VNG_AWS_PS1}${PS1}"
