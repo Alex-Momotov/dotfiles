@@ -4,7 +4,7 @@ chsh -s /bin/bash       # switch default shell to bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"     # install brew
 
 # mac settings
-defaults write -g InitialKeyRepeat -int 20 # Delay before key repeat, default min is 15
+defaults write -g InitialKeyRepeat -int 24 # Delay before key repeat, default min is 15
 defaults write -g KeyRepeat -int 1 # Key repeat speed
 defaults write -g com.apple.trackpad.scaling -float 20.0 # Trackpad speed
 defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
@@ -12,14 +12,10 @@ defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
 # install software
 brew install --cask visual-studio-code
 brew install --cask forklift
-brew install --cask slack
 brew install --cask vivaldi
-brew install --cask firefox
 brew install --cask iterm2
 brew install --cask intellij-idea-ce
 brew install --cask pycharm-ce
-brew install --cask datagrip
-brew install --cask postman
 brew install --cask anki
 brew install --cask postman
 brew install --cask spectacle
@@ -30,6 +26,7 @@ brew install git
 brew install hub
 brew install duti
 brew install gradle
+brew install maven
 brew install helm
 brew install helmfile
 brew install htop
@@ -37,7 +34,6 @@ brew install jq
 brew install kafka
 brew install kafkacat
 brew install mysql
-brew install maven
 brew install nmap
 brew install openjdk@11
 brew install openjdk@8

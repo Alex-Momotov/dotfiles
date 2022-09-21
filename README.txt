@@ -14,20 +14,24 @@ vscode
 - bash 2_vscode_create_links.sh
 
 iterm
-1. preferences > general tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder' > also select 'save changes': 'automatically'
-2. close iterm > git checkout settings/iterm/iterm_settings/com.googlecode.iterm2.plist
+- preferences > general tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder' > also select 'save changes': 'automatically'
+- close iterm > git checkout settings/iterm/iterm_settings/com.googlecode.iterm2.plist
+
+spectacle
+- change shortcuts
 
 intellij
-"File" -> "Export settings" -> save intellij_settings.zip in this repo
-"File" -> "Import settings" -> import the saved file
+'File' > 'Manage IDE Settings' > 'Import settings' > import the saved file
+'File' > 'Manage IDE Settings' > 'Export settings' > save intellij_settings.zip in this repo
 
 pycharm
-"File" -> "Export settings" -> save pycharm_settings.zip in this repo
-"File" -> "Import settings" -> import the saved file
+'File' > 'Manage IDE Settings' > 'Import settings' > import the saved file
+'File' > 'Manage IDE Settings' > 'Export settings' > save pycharm_settings.zip in this repo
 
-hub
-Add the following to ~/.company_vars (actual token is in the password manager).
-export GITHUB_TOKEN=12345
+git
+Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
+
+
 
 # _____________________________________________________________________________________________
 # INFO
