@@ -45,6 +45,11 @@ brew install openjdk@8
 # nano highlighting 	(if doesn't work follow instructions at https://github.com/scopatz/nanorc)
 wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 
+# sshrc
+wget https://raw.githubusercontent.com/cdown/sshrc/master/sshrc
+chmod +x sshrc
+sudo mv sshrc /usr/local/bin
+
 # Duti file associations
 duti -s com.microsoft.VSCode .css all
 duti -s com.microsoft.VSCode .go all
