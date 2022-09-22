@@ -1,3 +1,7 @@
+# sym links for _learning and personal _projects
+ln -s ~/_docs/_learning/ ~/_learning
+ln -s ~/_docs/_projects/ ~/_my_projects
+
 # mac settings
 defaults write -g InitialKeyRepeat -int 24 # Delay before key repeat, default min is 15
 defaults write -g KeyRepeat -int 1 # Key repeat speed

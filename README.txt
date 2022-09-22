@@ -48,7 +48,7 @@ system preferences
 - turn off scrolling inertia
 - shortcut to minimise window with cmd+m
 - turn off 'show recent applications in dock'
-
+- minimise motion
 
 # _____________________________________________________________________________________________
 # INFO
