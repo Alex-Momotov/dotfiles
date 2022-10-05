@@ -42,9 +42,11 @@ brew install sshrc
 brew install tfenv
 brew install tree
 brew install watch
+brew install docker
 brew install yt-dlp/taps/yt-dlp		# youtube video downloader
 brew install openjdk@11
 brew install openjdk@8
+brew install pipenv
 
 # nano highlighting 	(if doesn't work follow instructions at https://github.com/scopatz/nanorc)
 wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
