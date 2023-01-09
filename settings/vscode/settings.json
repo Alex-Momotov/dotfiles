@@ -43,7 +43,7 @@
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.activeIconPack": "angular",
     "explorer.confirmDelete": false,
-    "terminal.integrated.cwd": "/Users/omomotov",
+    "terminal.integrated.cwd": "/Users/alexmomotov/",
     "editor.fontSize": 13,
     "workbench.sideBar.location": "left",
     "breadcrumbs.enabled": false,
@@ -78,5 +78,6 @@
     "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Darcula"
+    "workbench.colorTheme": "Darcula",
+    "workbench.iconTheme": "material-icon-theme"
 }

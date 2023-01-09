@@ -2,8 +2,8 @@
 # NEW COMPUTER SETUP 
 1. curl https://raw.githubusercontent.com/alex-momotov/dotfiles/master/0_pre_install.sh | bash    # installs brew and google drive, creates all dirs
 2. login to google drive desktop app and set it to mirror files to ~/_drive (look up google password in bitwarden website, not extention)
-3. bash ~/_docs/_projects/dotfiles/0_install.sh
-4. Create sym links for openjdk installations (commands are in output of 0_install.sh).
+3. bash ~/_docs/_projects/dotfiles/1_install.sh
+4. Create sym links for openjdk installations (commands are in output of 1_install.sh).
 
 vivaldi
 - Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
@@ -32,7 +32,7 @@ pycharm
 git
 - git config --global user.name Alex-Momotov
 - git config --global user.email momotovalex@gmail.com
-- cd ~/.ssh; ssh-keygen -t ed25519 -C "momotovalex@gmail.com"		# generate new ssh key, don't use passphrase
+- cd ~/.ssh && ssh-keygen -t ed25519 -C "momotovalex@gmail.com"		# generate new ssh key, don't use passphrase
 - touch ~/.ssh/config # then append following to ~/.ssh/config. Make sure to use correct private key filename
   Host *
     AddKeysToAgent yes

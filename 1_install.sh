@@ -3,7 +3,7 @@ ln -s ~/_docs/_learning/ ~/_learning
 ln -s ~/_docs/_projects/ ~/_my_projects
 
 # mac settings
-defaults write -g InitialKeyRepeat -int 24 # Delay before key repeat, default min is 15
+defaults write -g InitialKeyRepeat -int 15 # Delay before key repeat, default min is 15
 defaults write -g KeyRepeat -int 1 # Key repeat speed
 defaults write -g com.apple.trackpad.scaling -float 20.0 # Trackpad speed
 defaults write com.apple.finder QuitMenuItem -bool true # Able to quit Finder
@@ -79,12 +79,12 @@ duti -s com.microsoft.VSCode .Jenkinsfile all
 duti -s com.microsoft.VSCode Jenkinsfile all
 
 # vscode recreate links
-rm /Users/omomotov/Library/Application\ Support/Code/User/settings.json
-rm /Users/omomotov/Library/Application\ Support/Code/User/keybindings.json
-rm -rf /Users/omomotov/Library/Application\ Support/Code/User/snippets
-ln ~/_docs/_projects/dotfiles/settings/vscode/settings.json /Users/omomotov/Library/Application\ Support/Code/User/settings.json
-ln ~/_docs/_projects/dotfiles/settings/vscode/keybindings.json /Users/omomotov/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/_docs/_projects/dotfiles/settings/vscode/snippets/ /Users/omomotov/Library/Application\ Support/Code/User/
+rm ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+rm -rf ~/Library/Application\ Support/Code/User/snippets
+ln ~/_docs/_projects/dotfiles/settings/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln ~/_docs/_projects/dotfiles/settings/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/_docs/_projects/dotfiles/settings/vscode/snippets/ ~/Library/Application\ Support/Code/User/
 
 # vscode extentions
 code --install-extension tomoki1207.pdf

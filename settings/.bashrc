@@ -55,10 +55,16 @@ alias gu='git push -u origin `parse_git_branch`'
 
 # docker
 alias d='docker'
+
 alias dr='docker run'
-alias dc='docker container'
-alias di='docker image'
-alias dv='docker volume'
+
+alias dv='docker volume ls'
+
+alias dc='docker container ls -a'
+alias dcc='docker container rm -f $(docker container ls -aq)'
+
+alias di='docker image ls -a'
+alias dii='docker image rm -f $(docker image ls -q) || true'
 
 # terraform
 alias tfenv='GREP_OPTIONS="--color=never" tfenv'
@@ -95,6 +101,9 @@ alias gw='./gradlew --stop; ./gradlew --console=verbose'
 
 # vonage aws
 alias v='vonage-aws'
+
+# yt-dlp
+alias yt='yt-dlp -f 'ba' -x --audio-format mp3 '
 
 #############################################################################################
 # Env variables
