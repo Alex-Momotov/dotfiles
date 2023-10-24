@@ -2,6 +2,8 @@
 source ~/.sshrc						# Command line prompt
 source ~/.custom_commands			# Custom commands
 source ~/.company_vars				# Company specific vars
+source ~/.current_aws_profile		# Currently selected AWS profile "export AWS_PROFILE=...", code in ~/.company_vars
+source ~/.current_aws_region            # Currently selected AWS region "export AWS_REGION=...", code in ~/.company_vars
 
 # Hide message about zsh being default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -58,12 +60,12 @@ alias d='docker'
 
 alias dr='docker run'
 
-alias dv='docker volume ls'
+alias dv='docker volume'
 
-alias dc='docker container ls -a'
+alias dc='docker container'
 alias dcc='docker container rm -f $(docker container ls -aq)'
 
-alias di='docker image ls -a'
+alias di='docker image'
 alias dii='docker image rm -f $(docker image ls -q) || true'
 
 # terraform
@@ -82,9 +84,6 @@ alias kv='kubeval'
 # helm
 alias h='helm'
 
-# kafkacat
-alias kaf='kafkacat'
-
 # maven
 alias ma='mvn archetype:generate'
 alias m='mvn clean'
@@ -96,8 +95,8 @@ alias mr='mvn resources:resources compiler:compile exec:java'
 alias mj='mvn jar:jar shade:shade'
 
 # gradle
-alias g='gradle --stop; gradle --console=verbose'
-alias gw='./gradlew --stop; ./gradlew --console=verbose'
+alias g='gradle --console=verbose'
+alias gw='./gradlew --console=verbose'
 
 # vonage aws
 alias v='vonage-aws'
@@ -105,11 +104,14 @@ alias v='vonage-aws'
 # yt-dlp
 alias yt='yt-dlp -f 'ba' -x --audio-format mp3 '
 
+# ported GNU commands
+alias sed='gsed'
+
 #############################################################################################
 # Env variables
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLASSPATH="."
 export PATH=$PATH:/usr/libexec/
 
@@ -135,10 +137,11 @@ eval "$(pyenv init -)"
 
 #############################################################################################
 # Editors 
-export VISUAL=nano
-export EDITOR=nano
+export VISUAL=code
+export EDITOR=code
 
-
+# my tools
+export PATH=$PATH:~/_docs/_projects/tools/jp
 
 
 

@@ -91,6 +91,8 @@ code --install-extension tomoki1207.pdf
 code --install-extension mohsen1.prettify-json
 code --install-extension PKief.material-icon-theme
 code --install-extension rokoroku.vscode-theme-darcula
+code --install-extension mechatroner.rainbow-csv
+code --install-extension nachocab.run-external
 
 # bashrc recreate sym links
 rm -rf ~/.bashrc

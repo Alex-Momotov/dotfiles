@@ -1,9 +1,12 @@
 #############################################################################################
 # Command line prompt
+red=$(tput setaf 1);
+yellow=$(tput setaf 3);
+blue=$(tput setaf 4);
+green=$(tput setaf 2);
 orange=$(tput setaf 166);
 white=$(tput setaf 15);
 violet=$(tput setaf 92);
-red=$(tput setaf 1);
 bold=$(tput bold);
 reset=$(tput sgr0);
 

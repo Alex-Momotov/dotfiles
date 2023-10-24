@@ -3,21 +3,15 @@
 	"workbench.editor.closeOnFileDelete": true,
     "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
-    "editor.lineDecorationsWidth": 0,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
     "terminal.external.osxExec": "iTerm.app",
     "workbench.statusBar.visible": false,
     "workbench.editor.tabCloseButton": "left",
-    "zenMode.hideTabs": false,
-	"debug.console.wordWrap": false,
 	"workbench.colorCustomizations": {
-        "terminal.selectionBackground": "#fbff008a",          // terminal highlight and search
-
+        "terminal.selectionBackground": "#fbff008a",        // terminal highlight and search
         "editor.selectionBackground": "#1B5986",            // selection - background
-        // "editor.selectionHighlightBackground": "#32593D",   // strings matching selection - background
         "editor.selectionHighlightBorder": "#61936F",       // strings matching selection - border
-
         "editor.findMatchBackground": "#214283",            // current search match - background
         "editor.findMatchHighlightBackground": "#32593D",   // background of other search matches
         "editor.findMatchHighlightBorder": "#61936F",       // border of other search matches
@@ -27,15 +21,16 @@
         "editor.insertSpaces": true
     },
     "editor.insertSpaces": false,
-    "editor.wordWrapColumn": 140,
-    "workbench.startupEditor": "newUntitledFile",
-    "git.enabled": true,
-    "editor.quickSuggestions": {
-        "comments": "off",
-        "strings": "off",
-        "other": "off"
-    },
-    "editor.tabCompletion": "onlySnippets",
+
+    // "editor.wordWrapColumn": 140,
+    // "git.enabled": true,
+    // "editor.quickSuggestions": {
+    //     "comments": "off",
+    //     "strings": "off",
+    //     "other": "off"
+    // },
+    // "editor.tabCompletion": "onlySnippets",
+
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.editor.enablePreview": false,
     "workbench.activityBar.visible": false,
@@ -43,29 +38,16 @@
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.activeIconPack": "angular",
     "explorer.confirmDelete": false,
-    "terminal.integrated.cwd": "/Users/alexmomotov/",
+    // "terminal.integrated.cwd": "/Users/alexmomotov/",
     "editor.fontSize": 13,
-    "workbench.sideBar.location": "left",
-    "breadcrumbs.enabled": false,
-    "window.zoomLevel": 0,
     "explorer.confirmDragAndDrop": false,
 
     "files.associations": {
         "*enkinsfile*": "groovy",
         "*.txt": "properties"
-    },
-    "explorer.autoReveal": false,
+    }, // Auto-reveal file in file tree
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     
-    // java
-    "java.configuration.runtimes": [
-        {
-          "name": "JavaCorreto11",
-          "path": "/Users/omomotov/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home",
-          "default":  true
-        }
-    ],
     "editor.copyWithSyntaxHighlighting": false,
     "files.exclude": {
         "**/.classpath": true,
@@ -73,11 +55,12 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "java.configuration.checkProjectSettingsExclusions": false,
     "terminal.integrated.shell.osx": "/bin/bash",
     "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "Darcula",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "python.terminal.activateEnvironment": false,
+    "explorer.autoReveal": false
 }

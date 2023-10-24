@@ -13,6 +13,9 @@ vivaldi
 
 vscode
 - activate dracula theme and material icon theme from command palette
+- switch between running commands in integrated/external terminal:
+  - integrated          workbench.action.terminal.runSelectedText
+  - external terminal   run-external.iterm
 
 iterm
 - preferences > general tab > 'Preferences' subtab > "Load preferences from a custom folder or URL" > Browse and select .../dotfiles/settings/iterm/iterm_settings/ dir > 'Save current settings to folder' > also select 'save changes': 'automatically'
