@@ -1,9 +1,11 @@
 # _____________________________________________________________________________________________
 # NEW COMPUTER SETUP 
-1. curl https://raw.githubusercontent.com/alex-momotov/dotfiles/master/0_pre_install.sh | bash    # installs brew and google drive, creates all dirs
+0. Install brew https://brew.sh 
+1. curl https://raw.githubusercontent.com/alex-momotov/dotfiles/master/0_pre_install.sh | bash    # installs google drive, creates all dirs
 2. login to google drive desktop app and set it to mirror files to ~/_drive (look up google password in bitwarden website, not extention)
 3. bash ~/_docs/_projects/dotfiles/1_install.sh
 4. Create sym links for openjdk installations (commands are in output of 1_install.sh).
+5. Restart computer
 
 vivaldi
 - Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
