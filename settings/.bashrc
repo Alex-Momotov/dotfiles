@@ -111,7 +111,8 @@ alias sed='gsed'
 # Env variables
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_HOME=`/usr/libexec/java_home`
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
 export CLASSPATH="."
 export PATH=$PATH:/usr/libexec/
 
@@ -129,11 +130,8 @@ export GIT_ASKPASS=~/.github/gittoken.sh
 # Brew
 export PATH=/opt/homebrew/bin:$PATH
 
-#############################################################################################
-# Code
-
-# pyenv
-eval "$(pyenv init -)"
+# intellij & pycharm
+export PATH=/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS:$PATH
 
 #############################################################################################
 # Editors 
@@ -142,7 +140,7 @@ export EDITOR=code
 
 # my tools
 export PATH=$PATH:~/_docs/_projects/tools/jp
-
+export PATH=$PATH:~/_scripts/
 
 
 PS1="${VNG_AWS_PS1}${PS1}"
