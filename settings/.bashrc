@@ -1,9 +1,12 @@
 ############################################################################################
 source ~/.sshrc						# Command line prompt
-source ~/.custom_commands			# Custom commands
-source ~/.company_vars				# Company specific vars
+source ~/_resources/_scripts/.company_vars		# Company specific vars
 source ~/.current_aws_profile		# Currently selected AWS profile "export AWS_PROFILE=...", code in ~/.company_vars
-source ~/.current_aws_region            # Currently selected AWS region "export AWS_REGION=...", code in ~/.company_vars
+source ~/.current_aws_region        # Currently selected AWS region "export AWS_REGION=...", code in ~/.company_vars
+
+# my tools
+export PATH=$PATH:~/_docs/_projects/tools/jp
+export PATH=$PATH:~/_resources/_scripts/
 
 # Hide message about zsh being default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -32,7 +35,7 @@ alias bs='brew services'
 alias ft='open . -a forklift'
 
 # yq
-alias yq='yq -C read -'
+# alias yq='yq -C read -'
 
 # pipenv
 alias pipenvs='echo ~/.local/share/virtualenvs/ ; ls ~/.local/share/virtualenvs/'
@@ -54,6 +57,19 @@ alias gc='git checkout'
 alias gt='git stash'
 alias gm='git commit'
 alias gu='git push -u origin `parse_git_branch`'
+# alias gmu='ga && gm -m wip && gu'
+
+function gmu {
+    if [ -z "$1" ]; then
+        echo "No parameter was provided."
+        ga && gm -m wip && gu
+        echo "No parameter was provided."
+    else
+        echo "The provided parameter is: $1"
+        ga && gm -m "$1" && gu
+        echo "The provided parameter is: $1"
+    fi
+}
 
 # docker
 alias d='docker'
@@ -131,16 +147,12 @@ export GIT_ASKPASS=~/.github/gittoken.sh
 export PATH=/opt/homebrew/bin:$PATH
 
 # intellij & pycharm
-export PATH=/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS:$PATH
+# export PATH=/Users/omomotov/Applications/IntelliJ IDEA Community Edition.app/Contents/MacOS:$PATH
+
 
 #############################################################################################
 # Editors 
 export VISUAL=code
 export EDITOR=code
-
-# my tools
-export PATH=$PATH:~/_docs/_projects/tools/jp
-export PATH=$PATH:~/_scripts/
-
 
 PS1="${VNG_AWS_PS1}${PS1}"
