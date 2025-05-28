@@ -1,4 +1,4 @@
-sym links for _learning and personal _projects
+# sym links for _learning and personal _projects
 ln -s ~/_docs/_learning/ ~/_learning
 ln -s ~/_docs/_projects/ ~/_my_projects
 
