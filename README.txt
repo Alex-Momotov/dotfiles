@@ -21,6 +21,7 @@ apple
 - fingerprint
 - login to apple account
 - doc icons placement
+- Settings > Battery > Options > turn off "Slightly dim the display on battery"
 
 vivaldi
 - Bitwarden extention. Configure it to not lock on computer lock and to autofil pages
@@ -31,6 +32,8 @@ vivaldi
 git
 - git config --global user.name Alex-Momotov
 - git config --global user.email momotovalex@gmail.com
+
+git - ssh authentication, for git cli commands that use SSH
 - cd ~/.ssh && ssh-keygen -t ed25519 -C "momotovalex@gmail.com"		# generate new ssh key, don't use passphrase
 - touch ~/.ssh/config # then append following to ~/.ssh/config. Make sure to use correct private key filename
   Host *
@@ -38,7 +41,13 @@ git
     IdentityFile ~/.ssh/key
 - ssh-add -K ~/.ssh/key		# make sure to use correct private key filename
 - Add the new key (public part) to your github account via the website > configure SSO > authorise all organisations
-# - Add 'export GITHUB_TOKEN=12345' to ~/.company_vars (actual token is in the password manager).
+
+git - access token authentication, for hub cli commands that use github API
+- touch ~/.config/hub # then append the following to ~/.config/hub. Take github access token value from password manager
+  --- 
+  github.com: 
+  - oauth_token: <GITHUB_ACCESS_TOKEN>
+    user: Alex-Momotov
 
 vscode
 - activate dracula theme and material icon theme from command palette
